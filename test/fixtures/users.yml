@@ -9,6 +9,11 @@
   #email: MyString
 
 brennan:
-  name: Brennan Basinger
-  email: bdbasinger777@gmail.com
+  name: Brennan Example
+  email: bdbasinger777@example.com
+  password_digest: <% User.digest('password') %>
+
+archer:
+  name: Sterling Archer
+  email: sterlingarcher@example.gov
   password_digest: <% User.digest('password') %>
