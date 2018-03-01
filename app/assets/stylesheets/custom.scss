@@ -8,22 +8,14 @@
 /* # indicates that the rule styles styles a CSS id */
 
 
-
-
 /* LacyBPottery Logo Image */
-
 img {
 	max-width:20%;
 	height:auto;
 }
 
 
-
-
-
-
 /* Users index */
-
 .users {
   list-style: none;
   margin: 0;
@@ -35,10 +27,7 @@ img {
 }
 
 
-
-
 /* mixins, variables, etc. */
-
 $gray-medium-light: #eaeaea;
 
 /* mixins, variables, etc. */
@@ -52,7 +41,6 @@ $gray-medium-light: #eaeaea;
 }
 
 /* miscellaneous */
-
 .debug_dump {
   clear: both;
   float: left;
@@ -63,9 +51,7 @@ $gray-medium-light: #eaeaea;
 
 
 
-
 /* sidebar */
-
 aside {
   section.user_info {
     margin-top: 20px;
@@ -103,12 +89,7 @@ aside {
 
 
 
-
-
-
-
 /* forms */
-
 .checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -123,8 +104,6 @@ aside {
   margin-left: 0;
 }
 
-
-
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -135,7 +114,6 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
-
 
 #error_explanation {
   color: red;
@@ -154,17 +132,7 @@ input {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* universal */
-
 body {
   padding-top: 60px;
   background-color: bisque;
@@ -186,8 +154,9 @@ textarea {
   }
 }
 
-/* typography */
 
+
+/* typography */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -214,8 +183,56 @@ p {
 }
 
 
-/* header */
+/* microposts */
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
 
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+
+
+
+/* header */
 #logo {
   float: left;
   margin-right: 10px;
@@ -231,8 +248,8 @@ p {
   }
 }
 
-/* footer */
 
+/* footer */
 footer {
   margin-top: 45px;
   padding-top: 5px;

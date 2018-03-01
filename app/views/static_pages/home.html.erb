@@ -1,14 +1,25 @@
-
-<div class="center jumbotron">
-  <h1>Welcome to LacyBPottery</h1>
-    <h2>This is the home page for LacyBPottery.</h2>
-    <h2>Welcome!</h2>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-  <div>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="micropost_form">
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1>Welcome to LacyBPottery</h1>
+    <!--<h2>This is the home page for LacyBPottery.</h2>-->
+    <!--<h2>Welcome!</h2>-->
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+    <div>
     <%= link_to image_tag("best_logo.jpg",  alt: "LacyBPottery Logo"), 'http://lacybpottery.com/' %>
   </div>
   <%#= link_to image_tag("rails.png",  alt: "Rails logo"), 'http://rubyonrails.org/' %>
 </div>
-
+<% end %>
 <%#= link_to image_tag("best_logo.png",  alt: "LacyBPottery Logo"), 'http://lacybpottery.com' %>
 <%#= link_to image_tag("sample.png", alt: "Sample logo"), 'http://localhost:3000/static_pages/home' %>
